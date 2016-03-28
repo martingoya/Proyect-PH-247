@@ -26,16 +26,6 @@
 
 	<!-- Preview Styles -->
 	<style>
-	    .flex-direction-nav a:before {
-	        display: block;
-	        position: absolute;
-	        content: '';
-	        width: 18px;
-	        height: 26px;
-	        top: 5px;
-	        left: 8px;
-	        background: url('Images/arrows2.png') no-repeat;
-        }
 html,body{height:100%}body{background:#f2f2f2 url('Images/header.png') no-repeat center top;min-height: 1500px;-webkit-box-shadow:inset 0 0 0 5px #f2f2f2,inset 0 0 0 10px #90c0aa,inset 0 0 0 15px #f2f2f2;-mox-box-shadow:inset 0 0 0 5px #f2f2f2,inset 0 0 0 10px #90c0aa,inset 0 0 0 15px #f2f2f2;box-shadow:inset 0 0 0 5px #f2f2f2,inset 0 0 0 10px #90c0aa,inset 0 0 0 15px #f2f2f2;margin:0}.flex-container{position: relative;margin: 0 auto; top: 275px; padding: 50px;}</style>
 <meta name="robots" content="noindex,follow" />
 </head>
@@ -67,7 +57,9 @@ html,body{height:100%}body{background:#f2f2f2 url('Images/header.png') no-repeat
             animation: 'slide',
             controlsContainer: '.flexslider',
             slideshowSpeed: '7000', 
-            animationSpeed: '1000'
+            animationSpeed: '1000',
+            touch: 'true',
+            pausePlay: 'true'
         });
     });
 </script>
