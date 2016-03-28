@@ -235,9 +235,11 @@
     <Content Include="Images\bx_loader.gif" />
     <Content Include="Images\controls.png" />
     <Content Include="Images\header.png" />
+    <Content Include="Images\pause.png" />
     <Content Include="Images\picture1.JPG" />
     <Content Include="Images\picture2.JPG" />
     <Content Include="Images\picture3.JPG" />
+    <Content Include="Images\play.png" />
     <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
