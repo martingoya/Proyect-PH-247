@@ -6,7 +6,6 @@
 
 body {
     background-color: #fff;
-    border-top: solid 10px #000;
     color: #333;
     font-size: .85em;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
@@ -48,6 +47,11 @@ mark {
 
 .float-right {
     float: right;
+}
+
+.float-none 
+{
+    float: none;
 }
 
 .clear-fix:after {
@@ -99,7 +103,7 @@ h5, h6 {
 }
 
 #body {
-    background-color: #efeeef;
+    background-color: #fff;
     clear: both;
     padding-bottom: 35px;
 }
@@ -179,31 +183,39 @@ footer {
 
 /* menu
 ----------------------------------------------------------*/
-ul#menu {
-    font-size: 1.3em;
-    font-weight: 600;
-    margin: 0 0 5px;
+#menu{
+    min-width: 100%;
+    
+}  
+#menu ul {
+    list-style-type: none;
+    margin: 0px;
     padding: 0;
-    text-align: right;
+    overflow: hidden;
+    background-color: #333;
 }
 
-    ul#menu li {
-        display: inline;
-        list-style: none;
-        padding-left: 15px;
-    }
+#menu li {
+    float: left;
+}
 
-        ul#menu li a {
-            background: none;
-            color: #999;
-            text-decoration: none;
-        }
+#menu li a 
+{
+    min-width: 25%;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 50px;
+    text-decoration: none;
+}
 
-        ul#menu li a:hover {
-            color: #333;
-            text-decoration: none;
-        }
+#menu li a:hover:not(.active) {
+    background-color: #111;
+}
 
+#menu .active {
+    background-color: #4CAF50;
+}
 
 /* page elements
 ----------------------------------------------------------*/

@@ -11,7 +11,23 @@ http://vladimirkudinov.com
 
 ######################################################### */
 
-
+    html,body
+    {
+        height:1500px
+    }
+    body
+    {
+        min-height: 300px;
+        -mox-box-shadow:inset 0 0 0 5px #f2f2f2,inset 0 0 0 10px #90c0aa,inset 0 0 0 15px #f2f2f2;
+        margin:0
+    }
+    .flex-container
+    {
+        position: relative;
+        margin: 0 auto; 
+        top: 275px; 
+        padding: 50px;
+    }
 
 /* Browser Resets */
 .flex-container a:active,
@@ -31,6 +47,7 @@ http://vladimirkudinov.com
 
 .flexslider {
 	margin: 0;
+	bottom: 300px;
 	padding: 0;
 }
 
