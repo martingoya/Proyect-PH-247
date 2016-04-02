@@ -7,8 +7,10 @@
 body {
     background-color: #fff;
     color: #333;
-    font-size: .85em;
-    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Waiting for the Sunrise', cursive;
+    /*font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;*/
     margin: 0;
     padding: 0;
 }
@@ -98,14 +100,14 @@ h5, h6 {
 /* main layout
 ----------------------------------------------------------*/
 .content-wrapper {
-    margin: 0 auto;
-    max-width: 960px;
+    margin: 0px;
+    max-width: 100%;
 }
 
 #body {
     background-color: #fff;
     clear: both;
-    padding-bottom: 35px;
+    padding-bottom: 50px;
 }
 
     .main-content {
@@ -126,7 +128,8 @@ footer {
     clear: both;
     background-color: #e2e2e2;
     font-size: .8em;
-    height: 100px;
+    height: 60px;
+    padding-left: 10px;
 }
 
 
@@ -185,36 +188,40 @@ footer {
 ----------------------------------------------------------*/
 #menu{
     min-width: 100%;
-    
+    padding-top: 20px;   
 }  
-#menu ul {
+
+#menu ul 
+{
+    max-width: 700px;
     list-style-type: none;
     margin: 0px;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #fff;
 }
 
 #menu li {
     float: left;
+    width: 25%;
 }
 
 #menu li a 
 {
     min-width: 25%;
     display: block;
-    color: white;
+    color: black;
     text-align: center;
-    padding: 10px 50px;
+    padding: 10px 20px;
     text-decoration: none;
 }
 
-#menu li a:hover:not(.active) {
-    background-color: #111;
+#menu li a:hover {
+    background-color: #FBFB98;
 }
 
 #menu .active {
-    background-color: #4CAF50;
+    background-color: #fff;
 }
 
 /* page elements
@@ -765,4 +772,65 @@ tr.pager td {
         footer p {
             margin: 0;
         }
+}
+
+#logo
+{
+    min-width: 100%;
+}
+
+#logo_c
+{
+    min-width: 100%;
+}
+
+#social
+{
+    position: relative;
+    padding-top: 10px;
+    min-width: 150px;
+    max-width: 960px;
+    display: block;
+    margin: 0 auto; 
+}
+
+#face{
+    width: 25px;
+    height: 25px;
+    background-image: url('/Images/face-ico.png');
+    background-repeat: no-repeat;
+    padding-right: 10px;
+    -webkit-background-size: 25px 25px;
+    display: inline;
+    float: right;
+    cursor:pointer;
+}
+
+#face:hover
+{
+    background-image: url('/Images/face-ico-h.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 25px 25px;
+    display: inline;
+    cursor:pointer;
+}
+
+#inst{
+    width: 25px;
+    height: 25px;
+    background-image: url('/Images/inst-ico.png');
+    background-repeat: no-repeat;
+    padding-right: 0px;
+    -webkit-background-size: 25px 25px;
+    display: inline;
+    float: right;
+    cursor:pointer;
+}
+
+#inst:hover
+{
+    background-image: url('/Images/inst-ico-h.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 25px 25px;
+    cursor:pointer;
 }
