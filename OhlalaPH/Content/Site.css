@@ -127,11 +127,12 @@ header .content-wrapper {
 footer {
     clear: both;
     background-color: #e2e2e2;
-    font-size: .8em;
-    height: 60px;
+    font-size: .5em;
+    height: 40px;
     padding-left: 10px;
+    font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
+    font-weight: normal;
 }
-
 
 /* site title
 ----------------------------------------------------------*/
@@ -188,7 +189,7 @@ footer {
 ----------------------------------------------------------*/
 #menu{
     min-width: 100%;
-    padding-top: 20px;   
+    padding-top: 0px;   
 }  
 
 #menu ul 
@@ -218,10 +219,14 @@ footer {
 
 #menu li a:hover {
     background-color: #FBFB98;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #menu .active {
     background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* page elements
@@ -833,4 +838,14 @@ tr.pager td {
     background-repeat: no-repeat;
     -webkit-background-size: 25px 25px;
     cursor:pointer;
+}
+ /*No select elements*/
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
 }
