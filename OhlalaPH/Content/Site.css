@@ -200,6 +200,7 @@ footer {
     padding: 0;
     overflow: hidden;
     background-color: #fff;
+    border-bottom: 1px solid #000000;
 }
 
 #menu li {
@@ -215,6 +216,7 @@ footer {
     text-align: center;
     padding: 10px 20px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 #menu li a:hover {
@@ -440,7 +442,7 @@ fieldset {
 
 label {
     display: block;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
 }
 
@@ -448,7 +450,7 @@ label.checkbox {
     display: inline;
 }
 
-input, textarea {
+/*input, textarea {
     border: 1px solid #e2e2e2;
     background: #fff;
     color: #333;
@@ -456,7 +458,7 @@ input, textarea {
     margin: 5px 0 6px 0;
     padding: 5px;
     width: 300px;
-}
+}*/
 
 textarea {
     font-family: inherit;
@@ -473,7 +475,7 @@ textarea {
         width: auto;
     }
 
-    input[type="submit"],
+   /*input[type="submit"],
     input[type="button"],
     button {
         background-color: #d3dce0;
@@ -484,7 +486,7 @@ textarea {
         padding: 7px;
         margin-right: 8px;
         width: auto;
-    }
+    }*/
 
     td input[type="submit"],
     td input[type="button"],
@@ -847,5 +849,66 @@ tr.pager td {
   -moz-user-select: none;      /* Firefox */
   -ms-user-select: none;       /* IE/Edge */
   user-select: none;           /* non-prefixed version, currently
-                                  not supported by any browser */
+                               not supported by any browser */
+}
+
+/*Contact Form*/
+div.row
+{
+    clear:left;
+    margin:6px;
+}
+label
+{
+    float:left;
+    width:200px;
+}
+input
+{
+    padding-bottom: 5px;
+    border-top-width: 1px;
+    padding-top: 5px;
+    border-right-width: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    float: left;
+    margin-top: 5px;
+}
+textarea
+{
+    width:300px;
+    height:100px;
+    padding-bottom: 5px;
+    border-top-width: 1px;
+    border-left-width: 2px;
+    padding-top: 5px;
+    border-right-width: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    float: left;
+    margin-top: 5px;
+}
+div.buttons
+{
+    margin-left:150px;
+    margin-top:16px;
+}
+
+.formContact
+{
+    width: 700px;
+}
+
+.asideForm{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    width: 395px;
+    height: auto;
+    padding: 23px 0 6px;
+    text-align: left;
+    overflow: hidden;
 }
