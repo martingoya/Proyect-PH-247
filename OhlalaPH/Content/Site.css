@@ -460,8 +460,9 @@ label.checkbox {
     width: 300px;
 }*/
 
-textarea {
-    font-family: inherit;
+textarea 
+{
+    font: 13.3333px Arial;
     width: 500px;
 }
 
@@ -865,18 +866,33 @@ label
 }
 input
 {
+    font-size: 12px;
     padding-bottom: 5px;
     border-top-width: 1px;
     padding-top: 5px;
     border-right-width: 1px;
     padding-right: 5px;
     padding-left: 5px;
-    float: left;
+    width: 240px; 
     margin-top: 5px;
+    text-transform: uppercase;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-color: black;
+    background-color: #F7F7F7;
+    border-bottom-width: 1px;
+}
+
+.input #text
+{
+    width: 300px;   
 }
 textarea
 {
-    width:300px;
+    font-size: 12px;
+    text-transform: uppercase;
+    width: 240px;
     height:100px;
     padding-bottom: 5px;
     border-top-width: 1px;
@@ -885,8 +901,14 @@ textarea
     border-right-width: 1px;
     padding-right: 5px;
     padding-left: 5px;
-    float: left;
     margin-top: 5px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-color: black;
+    background-color: #F7F7F7;
+    border-bottom-width: 1px;
+    resize: none;
 }
 div.buttons
 {
@@ -899,16 +921,68 @@ div.buttons
     width: 700px;
 }
 
-.asideForm{
+.sectionForm
+{
+    background-color: #F7F7F7;
+    border-color: gray;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
     float: left;
-    width: 395px;
+    width: 290px;
     height: auto;
-    padding: 23px 0 6px;
+    padding: 5px 0 6px;
     text-align: left;
     overflow: hidden;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-bottom-width: 1.5px;
+    border-top-width: 1.5px;
+    border-left-width: 1.5px;
+    border-right-width: 1.5px;
+    padding-bottom: 15px;
+}
+
+#buttonSubmit
+{
+    width: 90px;
+    float: left;
+    margin-left: 8px;
+}
+
+#buttonReset
+{
+    width: 120px;
+    float: right;
+    margin-right: 18px;
+}
+
+#centerForm
+{
+    padding-top: 5px;
+    padding-left: 10px;   
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #FBFB98;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-color: black;
+    border-bottom-width: 1px;
 }

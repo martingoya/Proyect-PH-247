@@ -1,36 +1,26 @@
 ﻿@model OhlalaPH.Models.ContactModels
 
 <center>
-@using (Html.BeginForm()) 
+@using (Html.BeginForm("HandleForm", "Home", FormMethod.Post, new { @class = "formContact"}))
 { 
-    <aside class="asideForm">
-        @Html.ValidationSummary(true)
-        <div class="row">
-            @Html.LabelFor(model=>model.Name, "Nombre:")
-            @Html.EditorFor(model=>model.Name)
-            @Html.ValidationMessageFor(model => model.Name)
-        </div>
-        <div class="row">
-            @Html.LabelFor(model=>model.Email,"Mail:")
-            @Html.EditorFor(model => model.Email)
-            @Html.ValidationMessageFor(model => model.Email)
-        </div>
-        <div class="row">
-            @Html.LabelFor(model => model.Tel, "Teléfono:")
-            @Html.EditorFor(model => model.Tel)
-            @Html.ValidationMessageFor(model => model.Tel)
-        </div>
-        <div class="row">
-            @Html.LabelFor(model=>model.Comment,"Consulta:")
-            @Html.TextAreaFor(model=>model.Comment)
-            @Html.ValidationMessageFor(model=>model.Comment)
-        </div>
-        <div class="buttons">
-            <div class="row">
-                <input type="submit" value="Enviar" />
-                <input type="reset" value="Limpiar Campos" />
-            </div>
-        </div>
-    </aside>
+    <section class="sectionForm">
+        <center id = "centerForm">
+            @Html.ValidationSummary(true)
+            @Html.TextBox("name", null, new { @class = "input" ,placeholder = "Nombre", id = "text" })
+            @Html.ValidationMessage("Name")
+            <br>
+            @Html.TextBox("mail", null, new { @class = "input", placeholder = "Mail", id = "text" })
+            @Html.ValidationMessage("Mail")
+            <br>
+            @Html.TextBox("tel", null, new { @class = "input", placeholder = "Teléfono", id = "text" })
+            @Html.ValidationMessage("Tel")
+            <br>
+            @Html.TextArea("msg", null, new { @class = "input", placeholder = "Mensaje", id = "text" })
+            @Html.ValidationMessage("Mensaje")
+            <br>
+            <input class = "button" type="submit" id = "buttonSubmit" value="Enviar"/>
+            <input class = "button" type="reset" id = "buttonReset" value="Limpiar Campos"/>
+        </center>
+    </section>
 }
 </center>

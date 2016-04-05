@@ -67,5 +67,15 @@ namespace OhlalaPH.Controllers
             }
             return View();
         }
+
+        public ActionResult HandleForm(FormCollection form)
+        {
+            string name = form["Name"];
+            string mail = form["Mail"];
+            string tel = form["Tel"];
+            string msg = form["Mensaje"];
+
+            return View();
+        }
     }
 }
