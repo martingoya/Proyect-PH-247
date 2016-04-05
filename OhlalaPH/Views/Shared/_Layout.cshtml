@@ -18,12 +18,12 @@
             <div class="content-wrapper">
                 <div id="logo" class="float-left">
                     <center class="noselect" >
-                        <img src="/Images/logo.png" alt="logo" width="20%"/>
+                        <img src="/Images/logo.png" alt="logo" width="200px"/>
                     </center>    
                 </div>
                 <div id="logo_c" class="float-left">
                     <center class="noselect">
-                        <img src="/Images/camera.png" alt="logo" width="7%"/>
+                        <img src="/Images/camera.png" alt="logo" width="75px"/>
                     </center>    
                 </div>
 @*                <div class="float-right">
@@ -38,10 +38,10 @@
                 <div id="menu" class="float-left">
                     <center class="noselect">
                         <ul>
-                            <li><a onclick="location.href='../Home/Index'">Home</a></li>
-                            <li><a href="#porfolio">Portfolio</a></li>
-                            <li><a onclick="location.href='../Home/About'">Nosotras</a></li>
-                            <li><a onclick="location.href='../Home/Contact'">Contacto</a></li>
+                            <li id="menuItem1" ><a onclick="location.href='../Home/Index'">Inicio</a></li>
+                            <li id="menuItem2" ><a href="#porfolio">Portfolio</a></li>
+                            <li id="menuItem3" ><a onclick="location.href='../Home/About'">Nosotras</a></li>
+                            <li id="menuItem4" ><a onclick="location.href='../Home/Contact'">Contacto</a></li>
                         </ul>
                     </center>
                 </div>
@@ -54,9 +54,17 @@
             </section>
         </div>
         <footer>
+            <div id="social" class="noselect">
+                <div id="inst" onclick="window.open('https://www.instagram.com/ohlalaph/','_blank');">
+                    @*<a target="_blank" href="https://www.instagram.com/ohlalaph/" style="display: none"></a>*@ 
+                </div>
+                <div id="face" onclick="window.open('https://www.facebook.com/OhLalaPH/','_blank');">
+                    @*<a target="_blank" href="https://www.facebook.com/OhLalaPH" style="display: none"></a>*@
+                </div> 
+            </div>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - Oh Lalá Producciones Fotográficas</p>
+                    <p id="textFooter">&copy; @DateTime.Now.Year - Oh Lalá Producciones Fotográficas</p>
                 </div>
             </div>
         </footer>

@@ -7,7 +7,7 @@
 body {
     background-color: #fff;
     color: #333;
-    font-size: 1.5em;
+    font-size: 22px;
     font-weight: bold;
     font-family: 'Waiting for the Sunrise', cursive;
     /*font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;*/
@@ -100,8 +100,8 @@ h5, h6 {
 /* main layout
 ----------------------------------------------------------*/
 .content-wrapper {
-    margin: 0px;
-    max-width: 100%;
+    margin: 0 auto;
+    max-width: 960px;
 }
 
 #body {
@@ -113,7 +113,7 @@ h5, h6 {
     .main-content {
         background: url("../Images/accent.png") no-repeat;
         padding-left: 10px;
-        padding-top: 30px;
+        padding-top: 10px;
     }
 
     .featured + .main-content {
@@ -205,7 +205,7 @@ footer {
 
 #menu li {
     float: left;
-    width: 25%;
+    width: 20%;
 }
 
 #menu li a 
@@ -219,16 +219,42 @@ footer {
     cursor: pointer;
 }
 
-#menu li a:hover {
+#menu li a:hover 
+{
+    border-radius: 5px;
     background-color: #FBFB98;
-    margin-left: 20px;
-    margin-right: 20px;
+    /*margin-left: 20px;
+    margin-right: 20px;*/
 }
 
 #menu .active {
     background-color: #fff;
-    margin-left: 20px;
-    margin-right: 20px;
+    /*margin-left: 20px;
+    margin-right: 20px;*/
+}
+
+#menuItem1
+{
+    /*margin-left: 4%;
+    margin-right: 3%;*/
+}
+
+#menuItem2
+{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#menuItem3
+{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#menuItem4
+{
+    /*margin-left: 3%;
+    margin-right: 2%;*/
 }
 
 /* page elements
@@ -613,175 +639,6 @@ tr.pager td {
     padding: 0 0.25em 0 0;
 }
 
-
-/********************
-*   Mobile Styles   *
-********************/
-@media only screen and (max-width: 850px) {
-
-    /* header
-    ----------------------------------------------------------*/
-    header .float-left,
-    header .float-right {
-        float: none;
-    }
-
-    /* logo */
-    header .site-title {
-        margin: 10px;
-        text-align: center;
-    }
-
-    /* login */
-    #login {
-        font-size: .85em;
-        margin: 0 0 12px;
-        text-align: center;
-    }
-
-        #login ul {
-            margin: 5px 0;
-            padding: 0;
-        }
-
-        #login li {
-            display: inline;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        #login a {
-            background: none;
-            color: #999;
-            font-weight: 600;
-            margin: 2px;
-            padding: 0;
-        }
-
-        #login a:hover {
-            color: #333;
-        }
-
-    /* menu */
-    nav {
-        margin-bottom: 5px;
-    }
-
-    ul#menu {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
-
-        ul#menu li {
-            margin: 0;
-            padding: 0;
-        }
-
-
-    /* main layout
-    ----------------------------------------------------------*/
-    .main-content,
-    .featured + .main-content {
-        background-position: 10px 0;
-    }
-
-    .content-wrapper {
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-
-    .featured .content-wrapper {
-        padding: 10px;
-    }
-
-    /* page content */
-    article, aside {
-        float: none;
-        width: 100%;
-    }
-
-    /* ordered list */
-    ol.round {
-        list-style-type: none;
-        padding-left: 0;
-    }
-
-        ol.round li {
-            padding-left: 10px;
-            margin: 25px 0;
-        }
-
-            ol.round li.zero,
-            ol.round li.one,
-            ol.round li.two,
-            ol.round li.three,
-            ol.round li.four,
-            ol.round li.five,
-            ol.round li.six,
-            ol.round li.seven,
-            ol.round li.eight,
-            ol.round li.nine {
-                background: none;
-            }
-
-     /* features */
-     section.feature {
-        float: none;
-        padding: 10px;
-        width: auto;
-     }
-
-        section.feature img {
-            color: #999;
-            content: attr(alt);
-            font-size: 1.5em;
-            font-weight: 600;
-        }
-
-    /* forms */
-    input {
-        width: 90%;
-    }
-
-    /* login page */
-    #loginForm {
-        border-right: none;
-        float: none;
-        width: auto;
-    }
-
-        #loginForm .validation-error {
-            display: block;
-            margin-left: 15px;
-        }
-
-    #socialLoginForm {
-        margin-left: 0;
-        float: none;
-        width: auto;
-    }
-
-
-    /* footer
-    ----------------------------------------------------------*/
-    footer .float-left,
-    footer .float-right {
-        float: none;
-    }
-
-    footer {
-        text-align: center;
-        height: auto;
-        padding: 10px 0;
-    }
-
-        footer p {
-            margin: 0;
-        }
-}
-
 #logo
 {
     min-width: 100%;
@@ -800,6 +657,7 @@ tr.pager td {
     max-width: 960px;
     display: block;
     margin: 0 auto; 
+    padding-right: 15px;
 }
 
 #face{
@@ -884,16 +742,11 @@ input
     border-bottom-width: 1px;
 }
 
-.input #text
-{
-    width: 300px;   
-}
 textarea
 {
     font-size: 12px;
-    text-transform: uppercase;
     width: 240px;
-    height:100px;
+    height:150px;
     padding-bottom: 5px;
     border-top-width: 1px;
     border-left-width: 2px;
@@ -930,11 +783,11 @@ div.buttons
     -o-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
-    float: left;
+    float: right;
     width: 290px;
     height: auto;
     padding: 5px 0 6px;
-    text-align: left;
+    text-align: right;
     overflow: hidden;
     border-top-style: solid;
     border-right-style: solid;
@@ -945,6 +798,7 @@ div.buttons
     border-left-width: 1.5px;
     border-right-width: 1.5px;
     padding-bottom: 15px;
+    padding-top: 0px;
 }
 
 #buttonSubmit
@@ -986,3 +840,550 @@ div.buttons
     border-color: black;
     border-bottom-width: 1px;
 }
+
+#pageTitle
+{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #FBFB98;
+    font-size: 48px;
+    margin-top: 0px;
+}
+
+#textFooter
+{
+    margin-top: 6px;
+    font-size: 12px;   
+}
+
+/* #########################################################
+
+HOW TO CREATE A RESPONSIVE IMAGE SLIDER [TUTORIAL]
+
+"How to create a Responsive Image Slider [Tutorial]" was specially made for DesignModo by our friend Valeriu Timbuc.
+
+Links:
+http://vtimbuc.net
+http://designmodo.com
+http://vladimirkudinov.com
+
+######################################################### */
+
+    html,body
+    {
+        height:100%;
+    }
+    body
+    {
+        min-height: 300px;
+        -mox-box-shadow:inset 0 0 0 5px #f2f2f2,inset 0 0 0 10px #90c0aa,inset 0 0 0 15px #f2f2f2;
+        margin:0
+    }
+    .flex-container
+    {
+        position: relative;
+        margin: 0 auto; 
+        top: 0px; 
+        padding: 0px;
+    }
+    
+    .flex-container .flex-next,
+    .flex-container .flex-prev
+    {
+        display: none;
+    }
+    
+    .flex-container:hover .flex-next,
+    .flex-container:hover .flex-prev
+    {
+        display: block; 
+    }
+
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  { outline: none; }
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.flexslider a img { outline: none; border: none; }
+
+.flexslider {
+	margin: 0;
+	bottom: 0px;
+	padding: 0;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides > li {
+	display: none;
+	-webkit-backface-visibility: hidden;
+}
+
+.flexslider .slides img {
+	width: 100%;
+	display: block;
+
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+/* Clearfix for the .slides element */
+.slides:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+html[xmlns] .slides { display: block; }
+* html .slides { height: 1%; }
+
+
+
+/* Theme Styles */
+.flexslider {
+	position: relative;
+	zoom: 1;
+	padding: 10px;
+	background: #ffffff;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0, .2);
+	-moz-box-shadow: 0px 1px 1px rgba(0,0,0, .2);
+	box-shadow: 0px 1px 1px rgba(0,0,0, .2);
+}
+
+/* Edit it if you want */
+.flex-container {
+	min-width: 150px;
+	max-width: 960px;
+}
+
+.flexslider .slides { zoom: 1; }
+
+
+
+/* Direction Nav */
+.flex-direction-nav a {
+	display: block;
+	position: absolute;
+	margin: -25px 0 0 0;
+	width: 47px;
+	height: 50px;
+	top: 50%;
+	cursor: pointer;
+	text-indent: -9999px;
+	z-index: 9999;
+    
+    /*background-color:#000000;*/
+    opacity:0.7;
+    filter:alpha(opacity=70);
+	/*background-color: #000000;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#555555));
+	background-image: -webkit-linear-gradient(top, #000000, #555555);
+	background-image: -moz-linear-gradient(top, #000000, #555555);
+	background-image: -o-linear-gradient(top, #000000, #555555);
+	background-image: linear-gradient(to bottom, #000000, #555555);*/
+}
+
+/* Direction Nav */
+.flex-direction-nav a:hover {
+	display: block;
+	position: absolute;
+	margin-top: -25px;
+	width: 47px;
+	height: 50px;
+	top: 50%;
+	cursor: pointer;
+	text-indent: -9999px;
+	z-index: 9999;
+    
+    /*background-color:#000000;*/
+    opacity:1;
+    filter:alpha(opacity=100);
+	/*background-color: #000000;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#555555));
+	background-image: -webkit-linear-gradient(top, #000000, #555555);
+	background-image: -moz-linear-gradient(top, #000000, #555555);
+	background-image: -o-linear-gradient(top, #000000, #555555);
+	background-image: linear-gradient(to bottom, #000000, #555555);*/
+}
+
+.flex-direction-nav a:before {
+
+}
+
+.flex-direction-nav a:after {
+	display: block;
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	top: 35px;
+}
+
+.flex-direction-nav .flex-next {
+	right: 10px;
+
+	-webkit-border-radius: 3px 0 0 3px;
+	-moz-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+	background: url('/Images/slideshow_arrow_right.png') no-repeat;
+}
+
+.flex-direction-nav .flex-prev {
+	/*left: 5px;*/
+
+	-webkit-border-radius: 0 3px 3px 0;
+	-moz-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+	margin-left: 5px;
+	background: url('/Images/slideshow_arrow_left.png') no-repeat;
+}
+
+.flex-direction-nav .flex-next:before { background-position: -18px 0; left: 10px; } /*background-position: Posicion de la imagen de NAV Derecho*/
+.flex-direction-nav .flex-prev:before { background-position: 0 0; }
+
+.flex-direction-nav .flex-next:after {
+	/*right: 0;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid #000000;*/
+}
+
+.flex-direction-nav .flex-prev:after {
+	/*left: 0;
+	border-bottom: 5px solid transparent;
+	border-right: 5px solid #000000;*/
+}
+
+/* Control Nav */
+.flexslider .flex-control-nav {
+	position: absolute;
+	width: 100%;
+	bottom: -40px;
+	text-align: center;
+	margin: 0 0 0 -10px;
+}
+
+.flex-control-nav li {
+	display: inline-block;
+	zoom: 1;
+}
+
+.flex-control-paging li a {
+	/*display: block;
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 15px;
+	height: 20px;
+	margin: 0 3px;
+	background-color: #b6b6b6 \9;
+
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+
+	-webkit-box-shadow: inset 0 0 0 2px #000000; /*Marco*/
+	/*-moz-box-shadow: inset 0 0 0 2px #000000;
+	box-shadow: inset 0 0 0 2px #000000;*/
+}
+
+.flex-control-paging li a.flex-active {
+	/*background-color: #000000;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#555555));
+	background-image: -webkit-linear-gradient(top, #000000, #555555);
+	background-image: -moz-linear-gradient(top, #000000, #555555);
+	background-image: -o-linear-gradient(top, #000000, #555555);*/
+	background-image: linear-gradient(to bottom, #000000, #555555);
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+/*.flex-pauseplay a {
+	display: block;
+	position: absolute;
+	margin: -45px 0 0 0;
+	width: 35px;
+	height: 35px;
+	top: 100%;
+	cursor: pointer;
+	text-indent: -9999px;
+	z-index: 9999;
+    
+    background-color:#000000;
+    opacity:0.7;
+    filter:alpha(opacity=70);
+}*/
+
+/*.flex-pauseplay a:hover {
+	display: block;
+	position: absolute;
+	margin: -45px 0 0 0;
+	width: 35px;
+	height: 35px;
+	top: 100%;
+	cursor: pointer;
+	text-indent: -9999px;
+	z-index: 9999;
+    
+    background-color:#000000;
+    opacity:1;
+    filter:alpha(opacity=100);
+}*/
+
+/*.flex-pauseplay a:before {
+	top: 5px;
+	left: 8px;
+}*/
+
+ /* Pause button */
+/*.flex-pauseplay .flex-pause:before {
+	-webkit-border-radius: 3px 0 0 3px;
+	-moz-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+	background: url('/Images/pause.png') no-repeat;
+	background-color: #000000;
+}*/
+
+/* Play button */
+/*.flex-pauseplay .flex-play:before {
+	-webkit-border-radius: 0 3px 3px 0;
+	-moz-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+	background: url('/Images/play.png') no-repeat;
+	background-color: #000000;
+}*/
+    
+/* Captions */
+.flexslider .slides p {
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 0 5px;
+	margin: 0;
+
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 20px;
+	color: white;
+
+	background-color: #222222;
+	background: rgba(0,0,0, .9);
+
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+/********************
+*   Mobile Styles   *
+********************/
+@media only screen and (max-width: 710px) {
+
+    /* header
+    ----------------------------------------------------------*/
+    header .float-left,
+    header .float-right {
+        float: none;
+    }
+
+    /* logo */
+    header .site-title {
+        margin: 10px;
+        text-align: center;
+    }
+
+    /* login */
+    #login {
+        font-size: .85em;
+        margin: 0 0 12px;
+        text-align: center;
+    }
+
+        #login ul {
+            margin: 5px 0;
+            padding: 0;
+        }
+
+        #login li {
+            display: inline;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #login a {
+            background: none;
+            color: #999;
+            font-weight: 600;
+            margin: 2px;
+            padding: 0;
+        }
+
+        #login a:hover {
+            color: #333;
+        }
+
+    /* menu */
+    nav {
+        margin-bottom: 5px;
+    }
+
+    #menu ul{
+        /*margin: 0;
+        padding: 0;
+        text-align: center;*/
+        font-size: 17px;
+    }
+    
+    #menu li a 
+    {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #menu li a:hover 
+    {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #menu .active {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    /* main layout
+    ----------------------------------------------------------*/
+    .main-content,
+    .featured + .main-content {
+        background-position: 10px 0;
+    }
+
+    .content-wrapper {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .featured .content-wrapper {
+        padding: 10px;
+    }
+
+    /* page content */
+    article, aside {
+        float: none;
+        width: 100%;
+    }
+
+    /* ordered list */
+    ol.round {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+        ol.round li {
+            padding-left: 10px;
+            margin: 25px 0;
+        }
+
+            ol.round li.zero,
+            ol.round li.one,
+            ol.round li.two,
+            ol.round li.three,
+            ol.round li.four,
+            ol.round li.five,
+            ol.round li.six,
+            ol.round li.seven,
+            ol.round li.eight,
+            ol.round li.nine {
+                background: none;
+            }
+
+     /* features */
+     section.feature {
+        float: none;
+        padding: 10px;
+        width: auto;
+     }
+
+        section.feature img {
+            color: #999;
+            content: attr(alt);
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+
+    /* forms */
+    input textarea{
+        width: 90%;
+    }
+
+    /* login page */
+    #loginForm {
+        border-right: none;
+        float: none;
+        width: auto;
+    }
+
+        #loginForm .validation-error {
+            display: block;
+            margin-left: 15px;
+        }
+
+    #socialLoginForm {
+        margin-left: 0;
+        float: none;
+        width: auto;
+    }
+
+
+    /* footer
+    ----------------------------------------------------------*/
+    footer .float-left,
+    footer .float-right {
+        /*float: none;*/
+    }
+
+    footer 
+    {
+        font-size:12px;
+        /*text-align: center;
+        height: auto;
+        padding: 10px 0;*/
+    }
+
+    footer p {
+        margin: 0;
+    }
+    
+    #textFooter
+    {
+        font-size: 10px;
+    }
+    
+    .sectionForm
+    {
+        float:left;   
+    }
+}
+
+/*********************************************************/

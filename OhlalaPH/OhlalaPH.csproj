@@ -246,6 +246,10 @@
     <Content Include="Images\picture1.JPG" />
     <Content Include="Images\picture2.JPG" />
     <Content Include="Images\picture3.JPG" />
+    <Content Include="Images\slideshow_arrow_left.png" />
+    <Content Include="Images\slideshow_arrow_left_mobile.png" />
+    <Content Include="Images\slideshow_arrow_right.png" />
+    <Content Include="Images\slideshow_arrow_right_mobile.png" />
     <Content Include="Scripts\jquery-1.12.2.min.js" />
     <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />

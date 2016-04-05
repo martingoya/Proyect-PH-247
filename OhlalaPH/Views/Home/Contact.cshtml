@@ -1,6 +1,8 @@
 ﻿@model OhlalaPH.Models.ContactModels
 
+
 <center>
+    <h3 id="pageTitle">Contacto</h3>
 @using (Html.BeginForm("HandleForm", "Home", FormMethod.Post, new { @class = "formContact"}))
 { 
     <section class="sectionForm">
@@ -15,7 +17,7 @@
             @Html.TextBox("tel", null, new { @class = "input", placeholder = "Teléfono", id = "text" })
             @Html.ValidationMessage("Tel")
             <br>
-            @Html.TextArea("msg", null, new { @class = "input", placeholder = "Mensaje", id = "text" })
+            @Html.TextArea("msg", null, new { @class = "input", placeholder = "MENSAJE", id = "text" })
             @Html.ValidationMessage("Mensaje")
             <br>
             <input class = "button" type="submit" id = "buttonSubmit" value="Enviar"/>
